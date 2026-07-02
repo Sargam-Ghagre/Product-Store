@@ -229,9 +229,13 @@ const ProductCard = ({ product }) => {
       overflow="hidden"
       borderWidth="1px"
       borderColor={borderColor}
-      transition="all 0.3s"
+      transition="all 0.2s ease-in-out"
       _hover={{
-        transform: "translateY(-8px)",
+        transform: "translateY(-8px) scale(1.03)",
+        shadow: "2xl",
+      }}
+      _focusWithin={{
+        transform: "translateY(-8px) scale(1.03)",
         shadow: "2xl",
       }}
       bg={bg}
